@@ -12,3 +12,6 @@ All data should be public and shouldn't require any specific permissions
 You can edit config in `mod.json`
 * **webhook_url** - paste your discord webhook here
 * **webhook_discord_server_url** - paste your discord server invite link
+
+## Found an issue or want to ask a question?
+* Create an issue on a github
