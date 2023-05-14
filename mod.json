@@ -1,0 +1,30 @@
+{
+    "Name": "cyberfrogg.webhookevents",
+    "Description": "Gather Game Events and Send it to discord webhook",
+    "Version": "1.0.1",
+    "LoadPriority": 1,
+    "RequiredOnClient": false,
+    "ConVars": [
+        {
+            "Name": "webhookevents_version",
+            "DefaultValue": "whe_1.0.1"
+        },
+        {
+            "Name": "webhook_url",
+            "DefaultValue": "YOUR_DISCORD_WEBHOOK_URL_HERE"
+        },
+        {
+            "Name": "webhook_discord_server_url",
+            "DefaultValue": "DISCORD_SERVER_INVITE_LINK",
+        }
+    ],
+    "Scripts": [
+        {
+            "Path": "webhookevents.nut",
+            "RunOn": "SERVER",
+            "ServerCallback": {
+                "After": "webhookevents_Init"
+            }
+        }
+    ]
+}
