@@ -67,7 +67,7 @@ void function webhookevents_sendwebhook(string title, string description, var co
     table embedFirst = {}
     table footer = {}
 
-    footer["text"] <- "MatchID: " + matchId + ""
+    footer["text"] <- "MatchID: " + matchId + " | " + "Players: " + format("%d", GetPlayerArray().len()) + ""
 
     embedFirst["title"] <- title
     embedFirst["description"] <- description
